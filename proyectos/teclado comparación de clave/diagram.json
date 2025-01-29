@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "author": "Alex Santiago Morales Morales",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 39, "left": 66.6, "attrs": {} },
+    {
+      "type": "wokwi-membrane-keypad",
+      "id": "keypad1",
+      "top": -462.8,
+      "left": 130.4,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [ "keypad1:C4", "uno:2", "green", [ "v28.8", "h5.2" ] ],
+    [ "keypad1:C3", "uno:3", "green", [ "v28.8", "h5.45" ] ],
+    [ "keypad1:C2", "uno:4", "green", [ "v28.8", "h5.7" ] ],
+    [ "keypad1:C1", "uno:5", "green", [ "v28.8", "h28.7" ] ],
+    [ "keypad1:R4", "uno:6", "green", [ "v28.8", "h38.2" ] ],
+    [ "keypad1:R3", "uno:7", "green", [ "v28.8", "h34.5" ] ],
+    [ "keypad1:R2", "uno:8", "green", [ "v0" ] ],
+    [ "keypad1:R1", "uno:9", "green", [ "v115.2" ] ]
+  ],
+  "dependencies": {}
+}
